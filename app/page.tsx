@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
+import Need from "@/components/Need";
+import Motivation from "@/components/Motivation";
 
 const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", style: ["normal", "italic"] });
 const sans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans" });
@@ -16,6 +18,8 @@ export default function Home() {
       <Navbar/>
       <Hero imageSrc="/padDriveHeroSectionImage"  donateUrl="#donate"/>
       <Impact imageSrc="/padDriveImpactSectionImage"/>
+      <Need />
+      <Motivation />
     </main>
   );
 };
