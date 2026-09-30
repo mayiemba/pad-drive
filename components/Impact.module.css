@@ -1,0 +1,152 @@
+.section {
+  --purple: #7b3f9e;
+  --ink: #10261a;
+  --mint-deep: #d3f3dc;
+
+  background: #dffbe3;
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 56px 28px 72px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+.title {
+  margin: 6px 0 0;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.lead {
+  max-width: 600px;
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #2d3b34;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #cfe8d6;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 436px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 34px;
+  background: #fff;
+}
+.iconWrap {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--mint-deep);
+  color: var(--purple);
+}
+.itemText {
+  flex: 1;
+  min-width: 0;
+}
+.itemText h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.itemText p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #3a4a42;
+}
+.accent {
+  flex: none;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.visual {
+  margin: 0;
+}
+.frame {
+  padding: 6px;
+  border-radius: 34px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(60, 40, 90, 0.07);
+}
+.imgBox {
+  position: relative;
+  aspect-ratio: 605 / 324;
+  border-radius: 28px;
+  overflow: hidden;
+}
+.img {
+  object-fit: cover;
+}
+.banner {
+  margin-top: 8px;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: var(--purple);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
