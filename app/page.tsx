@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
 import Need from "@/components/Need";
 import Motivation from "@/components/Motivation";
+import Footer from "@/components/Footer";
 
 const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", style: ["normal", "italic"] });
 const sans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans" });
@@ -20,6 +21,7 @@ export default function Home() {
       <Impact imageSrc="/padDriveImpactSectionImage"/>
       <Need />
       <Motivation />
+      <Footer />
     </main>
   );
 };
