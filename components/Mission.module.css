@@ -1,0 +1,119 @@
+.section {
+  --purple: #7b3f9e;
+  --ink: #10261a;
+
+  background: #e0fde3;
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  scroll-margin-top: 24px;
+}
+
+.inner {
+  max-width: 844px;
+  margin: 0 auto;
+  padding: 88px 28px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+.title {
+  margin: 8px 0 0;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(1.8rem, 3.6vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+.title em {
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--purple);
+}
+.lead {
+  max-width: 620px;
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d3b34;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 20px;
+  border-radius: 32px;
+  background: #fff;
+}
+.num {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #d3f3dc;
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 15px;
+}
+.step h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.step p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #3a4a42;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: #fdd98b;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(200, 150, 40, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(200, 150, 40, 0.3);
+}
+.cta:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: 56px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta {
+    transition: none;
+  }
+}
