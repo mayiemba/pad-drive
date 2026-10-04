@@ -15,13 +15,12 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="justify-self-start px-3 py-2 text-sm font-bold text-black sm:px-5 sm:py-2.5 sm:text-lg"
-        >
+          className="justify-self-start px-3 py-2 text-base font-bold text-[#7B3F9E] sm:px-5 sm:py-2.5 sm:text-2xl font-serif">
           Menstrual Dignity Drive
         </Link>
 
         {/* Centered on desktop; drops to its own row on small screens */}
-        <div className="order-last col-span-2 flex items-center justify-center gap-6 pb-2 sm:gap-8 md:order-none md:col-span-1 md:pb-0">
+        <div className="order-last col-span-2 flex items-center justify-center gap-6 pb-2 sm:gap-8 md:order-0 md:col-span-1 md:pb-0">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
