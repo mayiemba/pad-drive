@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { ReactNode } from "react";
 import styles from "./Motivation.module.css";
 
@@ -61,13 +60,10 @@ const CARDS: Card[] = [
   },
 ];
 
-type MotivationProps = {
-  avatarSrc?: string; // optional round photo of the person quoted
-};
 
-export default function Motivation({ avatarSrc }: MotivationProps) {
+export default function Motivation() {
   return (
-    <section className={styles.section} aria-labelledby="why-title">
+    <section id="motivation" className={styles.section} aria-labelledby="why-title">
       <div className={styles.inner}>
         <span className={styles.pill}>
           <svg
@@ -94,7 +90,7 @@ export default function Motivation({ avatarSrc }: MotivationProps) {
         <p className={styles.lead}>
           Nobody should miss schooling, dread puberty, or bear silent shame
           simply because of biological womanhood. In overburdened children’s
-          homes, resources are stretched thin between food and shelter—making
+          homes, resources are stretched thin between food and shelter, making
           menstrual hygiene an accidental casualty of scarcity. We exist to
           permanently close that gap.
         </p>

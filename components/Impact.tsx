@@ -88,7 +88,7 @@ const ITEMS: Item[] = [
 
 export default function Impact({ imageSrc }: { imageSrc: string }) {
   return (
-    <section className={styles.section} aria-labelledby="impact-title">
+    <section id="impact" className={styles.section} aria-labelledby="impact-title">
       <div className={styles.inner}>
         <header className={styles.header}>
           <div>

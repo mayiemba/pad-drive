@@ -8,7 +8,7 @@ type HeroProps = {
   imageSrc: string; // path to your image, e.g. "/dignity-basket.jpg"
 };
 
-export default async function Hero({ donateUrl = "#donate", imageSrc }: HeroProps) {
+export default async function Hero({imageSrc }: HeroProps) {
   const campaign = await getCampaign();
 
   return (
@@ -36,23 +36,8 @@ export default async function Hero({ donateUrl = "#donate", imageSrc }: HeroProp
 
           <CampaignProgress initial={campaign} serverNow={Date.now()} />
 
-          <a href={donateUrl} className={styles.cta}>
+          <a href="https://www.mchanga.africa/fundraiser/148697" target="_blank" className={styles.cta}>
             Donate Today
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden
-            >
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <path d="M15 3h6v6" />
-              <path d="M10 14 21 3" />
-            </svg>
           </a>
         </div>
 

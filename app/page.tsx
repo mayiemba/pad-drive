@@ -6,6 +6,7 @@ import Impact from "@/components/Impact";
 import Need from "@/components/Need";
 import Motivation from "@/components/Motivation";
 import Footer from "@/components/Footer";
+import Mission from "@/components/Mission";
 
 const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-serif", style: ["normal", "italic"] });
 const sans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans" });
@@ -17,8 +18,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#E9FFEC]">
       <Navbar/>
-      <Hero imageSrc="/padDriveHeroSectionImage"  donateUrl="#donate"/>
-      <Impact imageSrc="/padDriveImpactSectionImage"/>
+      <Hero imageSrc="/hero-image.jpeg"/>
+      <Mission />
+      <Impact imageSrc="/impact-image.jpeg"/>
       <Need />
       <Motivation />
       <Footer />

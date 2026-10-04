@@ -2,10 +2,8 @@ import styles from "./Footer.module.css";
 
 const LINKS = [
   { label: "Our Mission", href: "#mission" },
-  { label: "What We Provide", href: "#provide" },
+  { label: "Our Motivation", href: "#motivation" },
   { label: "Donation Impact & Metrics", href: "#impact" },
-  { label: "Frequently Asked Questions", href: "#faq" },
-  { label: "Financial Disclosures", href: "#financials" },
 ];
 
 const PARTNERS = ["New Beginning Children's Home, Utawala."];
