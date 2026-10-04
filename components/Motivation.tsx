@@ -121,11 +121,15 @@ export default function Motivation() {
               ★★★★★
             </div>
             <blockquote>
-              “To provide a girl with a sanitary pad is to provide her with
-              an education, with dignity, and with a future.”
+              “While times are absolutely changing, we still find ourselves up against a very
+               traditional notion that periods shouldn't be discussed in public. In order to normalize 
+               the topic of menstruation, we have to talk about it! The more people have access to quality 
+               menstrual health education and period products, the more we can work towards ending the period taboo. 
+               I'm extremely passionate about this because periods are not something to be ashamed of, and having 
+               access to high-quality period products shouldn't be something we have to fight for."
             </blockquote>
             <figcaption>
-              <strong>Archbishop Desmond Tutu</strong>
+              <strong>Claire Coder</strong>
             </figcaption>
           </div>
         </figure>
